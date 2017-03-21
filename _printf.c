@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  ** _printf - Entry Point
  ** @format: list of characters representing type of args
@@ -8,7 +7,6 @@
  ** type of input
  ** Return: 0 Success
  **/
-
 int _printf(const char *format, ...)
 {
 	char buffer[1024];
@@ -28,9 +26,14 @@ int _printf(const char *format, ...)
 	i = 0;
 	clear_buff(buffer);
 
+	if (format == NULL)
+	{
+		return (0);
+	}
 /* Print chars before first % and copy chars after % to copy */
 	while (format && format[i] != '\0')
 	{
+
 		if (format[i] != '%')
 		{
 			buffer[index] = format[i];
@@ -43,7 +46,7 @@ int _printf(const char *format, ...)
 			{
 				if (pf_func[j].input == format[i])
 				{
-					index = pf_func[j].f(print_list, buffer, index);
+				index = pf_func[j].f(print_list, buffer, index);
 				}
 				j++;
 			}
@@ -56,8 +59,6 @@ int _printf(const char *format, ...)
 	clear_buff(buffer);
 	return (index);
 }
-
-
 /**
  ** _strprint - print a string
  ** @str: pointer to string to print
@@ -86,8 +87,9 @@ void _strprint(char *str)
 void clear_buff(char *buffer)
 {
 	int i;
+
 	for (i = 0; i < 1024; i++)
 	{
-		buffer[i] = 0;
+		buffer[i] = '\0';
 	}
 }
