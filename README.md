@@ -1,5 +1,5 @@
 # printf
-A version of `printf` named `_printf ` created by Kristen Loyd and Wendy Segura. 
+A version of `printf` named `_printf ` created by Kristen Loyd and Wendy Segura.
 
 ## Project Notes
 
@@ -20,8 +20,6 @@ In the future, `_printf` will also handle the following conversion specifiers:
 
 ## Files
 * `README.md` : Current file, contains information about this project
-* `holberton.h` : Header file, contains all prototypes for funcitons used, as well as libriaries. 
+* `holberton.h` : Header file, contains all prototypes for funcitons used, as well as libriaries.
 * `printf.c` : Contains the code for `_printf`
 * `man_3_printf`: man page for our `_printf`
-
-
