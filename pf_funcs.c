@@ -28,11 +28,24 @@ int copy_string(va_list print_list, char *buffer, int index)
 {
 	int i;
 	char *x;
+	char *null_str;
+
+	null_str = "(null)";
 
 	x = va_arg(print_list, char *);
-	for (i = 0; x[i] != '\0'; i++, index++)
+	if (x == NULL)
 	{
-		buffer[index] = x[i];
+		for (i = 0; null_str[i] != '\0'; i++, index++)
+		{
+			buffer[index] = null_str[i];
+		}
+	}
+	else
+	{
+		for (i = 0; x[i] != '\0'; i++, index++)
+		{
+			buffer[index] = x[i];
+		}
 	}
 	return (index - 1);
 }
