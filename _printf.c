@@ -16,6 +16,8 @@ int _printf(const char *format, ...)
 		{'c', copy_char},
 		{'s', copy_string},
 		{'%', copy_mod},
+		{'i', copy_int},
+		{'d', copy_int},
 		{'\0', NULL}
 	};
 
