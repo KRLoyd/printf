@@ -1,7 +1,7 @@
 # printf
 A version of `printf` named `_printf ` created by Kristen Loyd and Wendy Segura.
 
-`_printf`takes a pointer to a constant character as the first parameter, and a number of subsequent parameters. The first parameter contains conversion specifiers for the subsequent arguments. 
+`_printf`takes a pointer to a constant character as the first parameter, and a number of subsequent parameters. The first parameter contains conversion specifiers for the subsequent arguments.
 
 Function prints the specified arguments in a formatted style and returns the number of characters printed.
 
@@ -18,7 +18,7 @@ The following conversion specifiers are handled with `_printf`:
 * `%c`: single character
 * `%s`: string of characters
 * `%d`: signed integer
-* `%i`: signedinteger 
+* `%i`: signedinteger
 
 ## Files
 * `README.md` : Current file, contains information about this project
