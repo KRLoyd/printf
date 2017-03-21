@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  ** copy_char - copies a character to buffer
@@ -10,6 +11,7 @@
 int copy_char(va_list print_list, char *buffer, int index)
 {
 	char x;
+
 	x = va_arg(print_list, int);
 	buffer[index] = x;
 	return (index);
@@ -26,6 +28,7 @@ int copy_string(va_list print_list, char *buffer, int index)
 {
 	int i;
 	char *x;
+
 	x = va_arg(print_list, char *);
 	for (i = 0; x[i] != '\0'; i++, index++)
 	{
@@ -47,14 +50,3 @@ int copy_mod(va_list print_list, char *buffer, int index)
 	buffer[index] = '%';
 	return (index);
 }
-
-/**
- ** print_string - prints a string
- ** @copy: list of arguments passed
- **/
-/* void print_string(va_list copy)
-{
-	char *x;
-	x = va_arg(copy, char *);
-	_puts(x);
-	}*/
