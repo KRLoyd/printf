@@ -21,10 +21,10 @@ int copy_char(va_list print_list, char *buffer, int index);
 int copy_string(va_list print_list, char *buffer, int index);
 int copy_mod(va_list print_list, char *buffer, int index);
 int _putchar(char c);
-void _puts(char *str);
 int _strlen(char *);
 char *_strcpy(char *dest, char *src);
 void _strprint(char *str);
 void clear_buff(char *buffer);
-int put_null(char *buffer, int index);
+int copy_int(va_list print_list, char *buffer, int index);
+int copy_unsigned_int(va_list print_list, char *buffer, int index);
 #endif /* HOLBERTON_H */
