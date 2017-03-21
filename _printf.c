@@ -34,8 +34,6 @@ int _printf(const char *format, ...)
 		if (format[i] != '%')
 		{
 			buffer[index] = format[i];
-/*			index++;
-			i++; */
 		}
 		else
 		{
@@ -68,7 +66,9 @@ int _printf(const char *format, ...)
 void _strprint(char *str)
 {
 	int i;
-	if (str != '\0')
+
+	i = 0;
+	if (*str != '\0')
 	{
 		while (str[i] != '\0')
 		{
