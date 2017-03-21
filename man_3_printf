@@ -1,0 +1,41 @@
+.TH _PRINTF 3 "20 March 2017" "version 1.0" "Programmer's Manual"
+.SH NAME
+.B _printf
+- personalized printf function that will format and print data
+.SH SYNOPSIS
+.PP
+.B _printf FORMAT [ARGUMENT]
+.PP
+.B #include ‘holberton.h’
+.PP
+.B #include <stdio.h>
+.PP
+.B #include <stdlib.h>
+.PP
+.B #include <stdarg.h>
+.PP
+.B #include <unistd.h>
+.PP
+.B int _printf(const char *format, …);
+.SH DESCRIPTION
+Personalized printf function that will take in variable arguments and print out at the standard  output, based on the formatter that is being specified. 
+.SH Return Value
+It should return the number of characters printed not including the null byte.
+.SH Conversion Specifier
+.B c,
+It prints an unsigned character.
+.PP
+.B d, i,
+The integer argument is converted to a decimal notation. 
+.PP
+.B s,
+This is a char * which is a pointer to array of characters which is a pointer to a string. 
+.PP
+.B %,
+This returns a character unless there is another % in front of it at, which it will return the actual sign.
+.SH SEE ALSO
+.I Nothing else
+.SH BUGS
+No Known Bugs
+.SH AUTHORS
+.B Kristen Loyd and Wendy Segura
