@@ -17,7 +17,7 @@ All files will be compiled with the following: `$ gcc -Wall -Werror -Wextra -ped
 The following conversion specifiers are handled with `_printf`:
 * `%c`: single character
 * `%s`: string of characters
-* '%d`: signed integer
+* `%d`: signed integer
 * `%i`: signedinteger 
 
 ## Files
