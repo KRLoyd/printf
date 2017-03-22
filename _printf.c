@@ -56,42 +56,6 @@ int _printf(const char *format, ...)
 		i++;
 		index++;
 	}
-	va_end(print_list);
-	_strprint(buffer);
-	clear_buff(buffer);
+	index = end_function (va_list print_list, char *buffer)
 	return (index);
-}
-/**
- ** _strprint - print a string
- ** @str: pointer to string to print
- ** Return: void
- **/
-void _strprint(char *str)
-{
-	int i;
-
-	i = 0;
-	if (*str != '\0')
-	{
-		while (str[i] != '\0')
-		{
-			_putchar(str[i]);
-			i++;
-		}
-	}
-}
-
-/**
- ** clear_buff - sets buffer to 0
- ** @buffer: pointer to memory of buffer
- ** Return: void
- **/
-void clear_buff(char *buffer)
-{
-	int i;
-
-	for (i = 0; i < 1024; i++)
-	{
-		buffer[i] = '\0';
-	}
 }
