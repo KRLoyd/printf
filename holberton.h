@@ -28,5 +28,4 @@ int copy_int(va_list print_list, char *buffer, int index);
 void end_function(va_list print_list, char *buffer);
 void * _realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 char *buff_realloc(char *buffer, int index);
-
 #endif /* HOLBERTON_H */
