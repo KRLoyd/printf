@@ -18,6 +18,7 @@ int _printf(const char *format, ...)
 		{'%', copy_mod},
 		{'i', copy_int},
 		{'d', copy_int},
+		{'u', copy_unsigned_int},
 		{'\0', NULL}
 	};
 
