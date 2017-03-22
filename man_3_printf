@@ -20,6 +20,11 @@
 .SH DESCRIPTION
 Personalized printf function that will take in variable arguments and print out at the standard  output, based on the formatter that is being specified.
 This printf function cannot handle any output over 1024 characters. This funciton will be updated in the future to be able to handle more than 1024 characters.
+.PP
+.SH Example of function _printf:
+ _printf("Hello %s %c", "World", '!')
+ OUTPUT = Print on stdout: Hello World!
+.PP
 .SH Return Value
 It should return the number of characters printed not including the null byte.
 .SH Conversion Specifier
