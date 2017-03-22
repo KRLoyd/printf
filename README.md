@@ -27,3 +27,4 @@ The following conversion specifiers are handled with `_printf`:
 * `_putchar.c`: File for function that prints a character
 * `pf_funcs.c`: File containing the specific functions for conversion specifiers
 * `man_3_printf`: man page for our `_printf`
+* testing: folder for test files
