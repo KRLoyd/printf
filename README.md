@@ -5,6 +5,11 @@ A version of `printf` named `_printf ` created by Kristen Loyd and Wendy Segura.
 
 Function prints the specified arguments in a formatted style and returns the number of characters printed.
 
+## Example of _printf function:
+'_printf("Hello %s%c", "World", '!')'
+
+* Output: prints to stdout: `Hello World!`
+
 ## Project Notes
 
 ### Style
