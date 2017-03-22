@@ -6,7 +6,7 @@ A version of `printf` named `_printf ` created by Kristen Loyd and Wendy Segura.
 Function prints the specified arguments in a formatted style and returns the number of characters printed.
 
 ## Example of _printf function:
-'_printf("Hello %s%c", "World", '!')'
+`_printf("Hello %s%c", "World", '!')`
 
 * Output: prints to stdout: `Hello World!`
 
@@ -23,7 +23,7 @@ The following conversion specifiers are handled with `_printf`:
 * `%c`: single character
 * `%s`: string of characters
 * `%d`: signed integer
-* `%i`: signedinteger
+* `%i`: signed integer
 
 ### To Fix
 Currently, `_printf` cannot handle anything that needs an output of more than 1024 characters.
@@ -36,4 +36,4 @@ In the future, we will fix this issue by either a) creating a check for our buff
 * `_putchar.c`: File for function that prints a character
 * `pf_funcs.c`: File containing the specific functions for conversion specifiers
 * `man_3_printf`: man page for our `_printf`
-* testing: folder for test files
+* `testing`: folder for test files
