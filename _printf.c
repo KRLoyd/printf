@@ -56,6 +56,6 @@ int _printf(const char *format, ...)
 		i++;
 		index++;
 	}
-	index = end_function (va_list print_list, char *buffer)
+	index = end_function(va_list print_list, char *buffer)
 	return (index);
 }
