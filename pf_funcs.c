@@ -8,19 +8,16 @@
  **/
 int copy_char(va_list print_list, char *buffer, int index)
 {
-	char x;
+	int x;
 
 	x = va_arg(print_list, int);
 
 	if (x == '\0')
 	{
-		return (index);
+		return (--index);
 	}
-	else
-	{
-		buffer[index] = x;
-		return (index);
-	}
+	buffer[index] = x;
+	return (index);
 }
 /**
  ** copy_string - copies a string to buffer
