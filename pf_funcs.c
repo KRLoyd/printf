@@ -71,41 +71,43 @@ int copy_mod(va_list print_list, char *buffer, int index)
  ** @index: index of buffer to copy to
  ** Return: index of newly copied int
  **/
-/* int copy_unsigned_int(va_list print_list, char *buffer, int index)
-{
-	int  b, div, len, last;
-	unsigned long int n;
-
-	div = 1;
-	len = 0;
-	n = va_arg(print_list, int);
-	last = n % 10;
-
-	n = n / 10; */
-
-	/* find divisor*/
-/*	b = n;
-
-	while (b > 0)
-	{
-	len += 1;
-	div *= 10;
-	b /= 10;
-	}
-	div /= 10; */
-
-/* print the digits */
-/*	while (len >= 1)
-	{
-		buffer[index] = n / div + '0';
-		n = n % div;
-		div = div / 10;
-		len--;
-		index++;
-	}
-	buffer[index] = last + '0';
-	return (index);
-	} */
+/**
+ * int copy_unsigned_int(va_list print_list, char *buffer, int index)
+ *{
+ *	int  b, div, len, last;
+ *	unsigned long int n;
+ *
+ *	div = 1;
+ *	len = 0;
+ *	n = va_arg(print_list, int);
+ *	last = n % 10;
+ *
+ *	n = n / 10;
+ *
+ *	/* find divisor
+ *	b = n;
+ *
+ *	while (b > 0)
+ *	{
+ *	len += 1;
+ *	div *= 10;
+ *	b /= 10;
+ *	}
+ *	div /= 10;
+ *
+ * print the digits
+ *	while (len >= 1)
+ *	{
+ *		buffer[index] = n / div + '0';
+ *		n = n % div;
+ *		div = div / 10;
+ *		len--;
+ *		index++;
+ *	}
+ *	buffer[index] = last + '0';
+ *	return (index);
+ *	}
+*/
 
 /**
  ** copy_int - copies an int to buffer
