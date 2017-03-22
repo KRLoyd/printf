@@ -18,7 +18,8 @@
 .PP
 .B int _printf(const char *format, …);
 .SH DESCRIPTION
-Personalized printf function that will take in variable arguments and print out at the standard  output, based on the formatter that is being specified. 
+Personalized printf function that will take in variable arguments and print out at the standard  output, based on the formatter that is being specified.
+This printf function cannot handle any output over 1024 characters. This funciton will be updated in the future to be able to handle more than 1024 characters.
 .SH Return Value
 It should return the number of characters printed not including the null byte.
 .SH Conversion Specifier
@@ -26,10 +27,10 @@ It should return the number of characters printed not including the null byte.
 It prints an unsigned character.
 .PP
 .B d, i,
-The integer argument is converted to a decimal notation. 
+The integer argument is converted to a decimal notation.
 .PP
 .B s,
-This is a char * which is a pointer to array of characters which is a pointer to a string. 
+This is a char * which is a pointer to array of characters which is a pointer to a string.
 .PP
 .B %,
 This returns a character unless there is another % in front of it at, which it will return the actual sign.
