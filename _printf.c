@@ -13,33 +13,22 @@ int _printf(const char *format, ...)
 	unsigned int i, j, index;
 	va_list print_list;
 	find_pf_func pf_func[] = {
-		{'c', copy_char},
-		{'s', copy_string},
-		{'%', copy_mod},
-		{'i', copy_int},
-		{'d', copy_int},
-		{'\0', NULL}
+		{'c', copy_char}, {'s', copy_string}, {'%', copy_mod},
+		{'i', copy_int}, {'d', copy_int}, {'\0', NULL}
 	};
-
 /* initialize print_list */
 	va_start(print_list, format);
-
 	index = 0;
 	i = 0;
 	clear_buff(buffer);
-
 	if (format == NULL)
-	{
 		return (0);
-	}
 /* Print chars before first % and copy chars after % to copy */
 	while (format && format[i] != '\0')
 	{
 
 		if (format[i] != '%')
-		{
 			buffer[index] = format[i];
-		}
 		else
 		{
 			i++;
